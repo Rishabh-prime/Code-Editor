@@ -1,0 +1,68 @@
+/* General styles */
+body {
+  margin: 2%;
+  background-color: rgb(183, 223, 21);
+}
+
+/* Top and bottom pane styles */
+.top-pane {
+  display: flex;
+  margin-top: 10%;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.bottom-pane {
+  display: flex;
+  height: 50vh;
+}
+
+/* Editor container styles */
+.editor-container {
+  box-shadow: 10px 10px 14px 18px rgba(16, 16, 16, 0.2);
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  display: flex;
+  padding: 2%;
+  border-radius: 10px;
+  transition: max-height 0.3s ease; 
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+/* Editor title styles */
+.editor-title {
+  width: 100%;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  text-shadow: 5px 5px 10px rgb(8, 8, 8);
+  border-radius: 5px;
+}
+
+/* CodeMirror styles */
+.CodeMirror {
+  border-radius: 8px; 
+  overflow: hidden;
+  
+}
+.CodeMirror pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Button styles */
+.button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
